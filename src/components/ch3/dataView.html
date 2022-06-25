@@ -12,6 +12,29 @@
     <input type="text" id="txt">
     <div id="tip">...</div>
     <script>
+        // var obj = new Object;  //obj = {}
+        // obj.name = "张三";  //添加描述
+        // obj.say = function(){};  //添加行为
+
+        // var obj = {};
+        // var initValue = 'hello';
+        // Object.defineProperty(obj, "name2", {
+        //     get: function () {
+        //         //函数在获取值时触发
+        //         return initValue;
+        //     },
+        //     set: function (value) {
+        //         //函数在设置值时触发,新值通过参数 value 获取
+        //         initValue = value;
+        //     }
+        // });
+        // // 获取初始值
+        // console.log(obj.name2);  // 输出"hello"
+        // // 设置新值
+        // obj.name2 = '李四';
+        // // 输出设置的值
+        // console.log(obj.name2); // 输出"李四"
+
         let txt = document.getElementById("txt");
         let tip = document.getElementById("tip");
         let obj = {
@@ -31,7 +54,7 @@
         txt.addEventListener("keyup", function () {
             obj[propName] = this.value;
         })
-        
+
     </script>
 </body>
 

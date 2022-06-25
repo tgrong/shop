@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "allowJs": true
+    },
+    "vueCompilerOptions": {
+        "experimentalDisableTemplateSupport": true,
+        "jsx": "preserve"
+    }
+}

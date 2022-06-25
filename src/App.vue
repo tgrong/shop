@@ -1,14 +1,14 @@
 <template>
-  <SayHello />
+  <EventObject />
 </template>
 
 <script>
-import SayHello from "./components/ch3/SayHello.vue";
+import EventObject from "./components/ch4/EventObject.vue";
 
 export default {
   name: "App",
   components: {
-    SayHello
+    EventObject
   }
 };
 </script>
@@ -18,8 +18,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
