@@ -1,19 +1,20 @@
 <template>
-  <EventObject />
+  <GsapGroup />
 </template>
 
 <script>
-import EventObject from "./components/ch4/EventObject.vue";
+import GsapGroup from "./components/ch5/GsapGroup.vue";
 
 export default {
   name: "App",
   components: {
-    EventObject
+    GsapGroup
   }
 };
 </script>
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
