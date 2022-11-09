@@ -1,18 +1,15 @@
 <template>
-  <GsapGroup />
+  <Parent/>
 </template>
-
 <script>
-import GsapGroup from "./components/ch5/GsapGroup.vue";
-
+import Parent from './components/ch7/part5/Parent.vue';
 export default {
   name: "App",
   components: {
-    GsapGroup
+    Parent
   }
 };
 </script>
-
 <style>
 
 #app {

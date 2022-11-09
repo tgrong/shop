@@ -1,4 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-
-createApp(App).mount('#app')
+import Global from './components/ch6/Global'
+let app = createApp(App);
+app.component("Global", Global)
+app.mount('#app')
