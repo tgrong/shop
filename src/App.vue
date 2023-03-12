@@ -1,13 +1,9 @@
 <template>
-  <Parent/>
+  <router-view></router-view>
 </template>
 <script>
-import Parent from './components/ch7/part5/Parent.vue';
 export default {
-  name: "App",
-  components: {
-    Parent
-  }
+  name: "App"
 };
 </script>
 <style>

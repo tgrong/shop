@@ -8,11 +8,11 @@
 export default {
      data(){
         return{
-            arr:["张三","李四","王二"]
+            arr:["张明明","李小华","王忠远"]
         }
      },methods:{
         add(){
-            this.arr.push("sdf")
+            this.arr.push("陶国荣")
         }
      }
 }
