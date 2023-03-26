@@ -1,16 +1,29 @@
-import { createRouter, createWebHistory } from 'vue-router'
-const Login = () => import('../views/login.vue')
-const Home = () => import('../views/home.vue')
-const About = () => import('../views/about.vue')
+import { createRouter, createWebHistory } from 'vue-router';
 
+// 配置组件对应路径
 const routes = [
-    { path: '/', name: 'login', component: Login },
-    { path: '/home', name: 'home', component: Home, },
-    { path: '/about', name: 'about', component: About },
+    {
+        path: '/list',
+        name: 'list',
+        component: () => import('../views/list.vue'),
+        children: [
+            {
+                path: 'grade',
+                name: 'grade',
+                component: () => import('../views/grade.vue'),
+                children: [
+                    {
+                        path: 'cls',
+                        name: 'cls',
+                        component: () => import('../views/cls.vue')
+                    }
+                ]
+            }
+        ]
+    }
 ]
 const router = createRouter({
-    history: createWebHistory('./'),
+    history: createWebHistory(process.env.BASE_URL),
     routes
 })
-
 export default router
