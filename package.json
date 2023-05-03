@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "axios": "^1.4.0",
     "core-js": "^3.6.5",
     "gsap": "^3.10.4",
     "mitt": "^3.0.0",
@@ -36,7 +37,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-unused-vars":"off"
+    }
   },
   "browserslist": [
     "> 1%",

@@ -6,8 +6,8 @@ const routes = [
         path: '/list',
         name: 'list',
         component: () => import('../views/list.vue'),
-        meta:{
-            isNoLogin:true
+        meta: {
+            isNoLogin: true
         },
         children: [
             {
@@ -45,9 +45,14 @@ const routes = [
         component: () => import('../views/ch8/dispStu.vue')
     },
     {
+        path: '/d-1',
+        name: 'd-1',
+        component: () => import('../components/ch9/BaseRequest.vue')
+    },
+    {
         path: '/error',
         redirect: '/list',
-      },
+    },
     // {
     //     path: '/error',
     //     redirect: {
@@ -90,9 +95,8 @@ const router = createRouter({
     routes
 })
 router.beforeEach((to, from) => {
-    console.log(to,from)
-    const loginUser = localStorage.getItem("loginUser")
-    if (!loginUser) return '/login'
-  })
-  
+    // const loginUser = localStorage.getItem("loginUser")
+    // if (!loginUser) return '/login'
+})
+
 export default router

@@ -1,40 +1,18 @@
 <template>
-  <!-- <a href="/list">学校首页</a>
-  <router-link to="/list">学校首页</router-link>
-
-  <a href="/list/1001">一年级</a>
-  <a href="/list?gradeId=1001">一年级</a>
-
-  <router-link :to="{
-    name: 'list2',
-    params: {
-      gradeId: 1001
-    }
-  }">一年级</router-link>
-
-  <div @click="router.push({
-    name: 'list2',
-    params: {
-      gradeId: 1001
-    }
-  })">一年级</div>
-
-  <div @click="router.push({
-    name: 'list'
-  })">
-    学校首页
-  </div> -->
-  <router-link to="/stulist">学生列表</router-link>
-  <span v-show="router.currentRoute.name == 'dispstu'"> > 学生详细 </span>
-  <router-view></router-view>
+  <div class="frame">
+    <div class="f-left">
+      <router-link to="/d-1">基础请求</router-link>
+    </div>
+    <div class="f-right">
+      <router-view></router-view>
+    </div>
+  </div>
 </template>
 <script>
-import { useRouter } from "vue-router"
 export default {
   name: "App",
   data() {
     return {
-      router: useRouter()
     }
   }
 };
@@ -51,5 +29,15 @@ nav {
   color: #666;
   margin: 5px 0;
   font-size: 13px;
+}
+a{
+  text-decoration: none;
+}
+.frame{
+  display: flex;
+}
+.frame .f-left{
+  width: 120px;
+  padding: 10px;
 }
 </style>
