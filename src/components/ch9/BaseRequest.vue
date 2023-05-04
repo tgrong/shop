@@ -12,17 +12,19 @@
     </div>
 </template>
 <script>
-import request from '@/plugins/axios';
 export default {
     data() {
         return {
             data: "loading..."
         }
     },
+    mounted(){
+        console.log(this,"sdd")
+    },
     methods: {
 
         onSendRequest() {
-            request.get('/?day=1-1').then(d => {
+            this.$http.get('/?day=1-1').then(d => {
                 this.data = d.data
                 
             })
