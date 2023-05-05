@@ -15,30 +15,15 @@
 export default {
     data() {
         return {
-            data: "loading..."
+            data: ""
         }
     },
-    mounted(){
-        console.log(this,"sdd")
-    },
     methods: {
-
         onSendRequest() {
+            this.data = "loading...";
             this.$http.get('/?day=1-1').then(d => {
                 this.data = d.data
-                
             })
-
-            // axios({
-            //     method: 'GET',
-            //     url: 'http://rttop.cn/api/?day=1-1',
-            //     data: {
-            //         firstName: 'tao',
-            //         lastName: 'guorong'
-            //     }
-            // }).then(res=>{
-            //     console.log("返回数据",res)
-            // })
         }
     }
 }
