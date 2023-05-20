@@ -45,9 +45,9 @@ const routes = [
         component: () => import('../views/ch8/dispStu.vue')
     },
     {
-        path: '/d-1',
-        name: 'd-1',
-        component: () => import('../components/ch9/BaseRequest.vue')
+        path: '/s-1',
+        name: 's-1',
+        component: () => import('../components/ch10/useStore.vue')
     },
     {
         path: '/error',

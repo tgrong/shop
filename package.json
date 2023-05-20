@@ -13,6 +13,7 @@
     "core-js": "^3.6.5",
     "gsap": "^3.10.4",
     "mitt": "^3.0.0",
+    "pinia": "^2.0.35",
     "vue": "^3.0.0",
     "vue-router": "^4.1.6"
   },
@@ -38,7 +39,7 @@
       "parser": "babel-eslint"
     },
     "rules": {
-      "no-unused-vars":"off"
+      "no-unused-vars": "off"
     }
   },
   "browserslist": [
