@@ -1,7 +1,8 @@
 <template>
   <div class="frame">
     <div class="f-left">
-      <router-link to="/s-1">显示数据</router-link>
+      <router-link to="/s-1">显示数据</router-link><br />
+      <router-link to="/s-2">显示State</router-link>
     </div>
     <div class="f-right">
       <router-view></router-view>

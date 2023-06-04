@@ -50,6 +50,11 @@ const routes = [
         component: () => import('../components/ch10/useStore.vue')
     },
     {
+        path: '/s-2',
+        name: 's-2',
+        component: () => import('../components/ch10/useState.vue')
+    },
+    {
         path: '/error',
         redirect: '/list',
     },
