@@ -1,7 +1,7 @@
 <template>
     <div>
         {{ name }},{{ count }},{{ changeCount }}
-        <button @click="addCount">增加</button>
+        <button @click="editCount(5)">增加</button>
     </div>
 </template>
 <script>
@@ -17,7 +17,7 @@ export default {
        ...mapState(schStore,["name","count","changeCount"])
     },
     methods:{
-        ...mapActions(schStore,["addCount"])
+        ...mapActions(schStore,["editCount"])
     }
 }
 </script>

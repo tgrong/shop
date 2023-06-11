@@ -2,16 +2,19 @@
     <div></div>
 </template>
 <script>
-import { mapState } from 'pinia'
+import { mapState, mapActions } from 'pinia'
 import { schStore } from "../../store/schStore";
 export default {
     computed: {
-        ...mapState(schStore, ["name", "changeName"])
+        ...mapState(schStore, ["name", "count"])
+    },
+    methods: {
+        ...mapActions(schStore, ["editCount", "addGrade", "ajaxEditName"])
     },
     mounted() {
-        console.log(this.name);
-        this.changeName;
-        console.log(this.name);
+        const store = schStore();
+        console.log(store.tip);
+        console.log(store.$state.name);
     }
 }
 </script>
