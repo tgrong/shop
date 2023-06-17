@@ -15,7 +15,8 @@
     "mitt": "^3.0.0",
     "pinia": "^2.0.35",
     "pinia-plugin-persist": "^1.0.0",
-    "vue": "^3.0.0",
+    "vant": "^4.5.0",
+    "vue": "^3.2.13",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
